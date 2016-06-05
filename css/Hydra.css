@@ -1,0 +1,390 @@
+/* == FONTS == */
+
+@font-face {
+font-family: Delicious;
+src: url("../fonts/Delicious-Roman.otf") format("opentype");
+}
+
+@font-face {
+font-family: Delicious;
+font-weight: bold;
+src: url("../fonts/Delicious-Bold.otf") format("opentype");
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+	position: relative;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.Work-Container, .Work-Image--Uqzz, .Work-Image--PHP, .Work-Image--Live{
+  background: white;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 6px solid #915FBB;
+}
+
+.Work-Image--Uqzz .Work-Preview{
+  background-image: url(../images/Work-1.png);
+}
+
+.Work-Preview{
+  float: left;
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: top;
+  height: 100%;
+}
+
+.effectfront {
+  border: none;
+  margin: 0 auto;
+}
+.effectfront:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+
+/* *** Header image *** */
+
+.header
+{
+    margin: auto;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 65%;
+    background: url(../images/Header.jpeg) no-repeat center 40% scroll;
+    background-size: cover;
+}
+
+.LogoIMG {
+	margin: auto;
+  display: table-cell;
+  position: relative;
+	border-radius: 50%;
+	border: 5px solid #FFFFFF;
+	min-width: 125px;
+	min-height: 125px;
+}
+
+.White {
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+.Black {
+	color: Black;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.Text-Bold-White {
+	color: white;
+	text-align: center;
+	font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.Page-Header-Text {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 670px;
+	font-weight: 300;
+	padding: 50px 20px 0px 20px;
+	font-size: 44px;
+	margin: 0 auto;
+	color: Black;
+	text-align: center;
+}
+
+.Text-Bold-Black {
+	color: black;
+	font-size: 25px;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+.section-Area {
+    padding: 5em 0;
+    color: #fff;
+}
+
+.Work-Container{
+  max-height: 100px;
+}
+
+.Work-Image{
+  float: left;
+}
+
+.Small {
+	color: white;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.Quote {
+  text-align: center;
+  font-size: 18px;
+}
+
+.CenterIt {
+  text-align: center;
+  margin-top: -6px;
+}
+
+.About-Area{
+  width: 70%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 14%;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
+.CenterHeader {
+	padding-top: 10%;
+	vertical-align: middle;
+	padding-bottom: 5%;
+  position: absolute; width: 100%;
+}
+
+.CenterCenter {
+	#display: table-cell;
+   vertical-align: middle;
+}
+
+.MainArea {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 65%;
+ }
+
+ .Title-Line{
+   color: #777;
+   border-top: 1px solid #e5e5e5;
+   padding-right: 0;
+   padding-left: 0;
+   width: 15%;
+   padding-bottom: 10px;
+   margin-left: 42.5%;
+ }
+
+ .footer {
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+	padding-right: 0;
+	padding-left: 0;
+ }
+
+ .footer-right{
+	float: right !important;
+	margin-right: -15px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+ }
+
+ .footer-right > li {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.footer-right > li > a {
+  position: relative;
+  display: block;
+  padding: 7px 8px;
+}
+
+.footer-right > li > a:hover,
+.footer-right > li > a:focus {
+  text-decoration: none;
+  background-color: none;
+}
+
+ .footer-left{
+	float: left !important;
+	margin-left: -15px;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+ }
+
+ .footer-left > li {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.footer-left > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.footer-left > li > p {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.footer-left > li > a:hover,
+.footer-left > li > a:focus {
+  text-decoration: none;
+  background-color: none;
+}
+
+.active {
+	color: #fff !important;
+  border-bottom: 3px solid #26D2D2;
+ }
+
+ .clear-nav{
+   background-color: transparent;
+   position: fixed;
+   width: 100%;
+   transition: all .50s ease;
+ }
+
+ .portfolio-container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.portfolio-container:after {
+	clear: both;
+    display: table;
+    content: "";
+	}
+
+@media only screen and (min-width: 1024px) {
+    .portfolio-container {
+		max-width: 1024px;
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+    .portfolio-container {
+		max-width: 1120px;
+		padding: 0 40px;
+	}
+}
+
+.portfolio-container:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.edge {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+@media only screen and (min-width: 480px) {
+    .edge {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+    .edge {
+		width: 33.33%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+    .edge {
+		width: 25%;
+	}
+}
+
+.edge img {
+    display: none;
+    float: left;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.edge-shot {
+    display: inline-block;
+    width: 200px;
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.edge-shot:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.edge-shot small {
+    display: block;
+    text-align: right;
+    margin: 10px 0;
+}

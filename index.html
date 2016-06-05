@@ -1,0 +1,181 @@
+<!--
+	===========================================
+	Component: Freedom Portfolio
+	Sub-component: Index
+	Purpose: Main web page for site.
+
+	Initial author: Alex King
+	Started: 2015-07-11
+	===========================================
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- Page Information -->
+	<title>Freedom's Portfolio</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+
+	<!-- StyleSheets -->
+	<!-- NOTE: Have a look at adding external sources for css files. -->
+	<link rel="stylesheet" href="css/Hydra.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="scripts/scroll.js"></script>
+	<script language="JavaScript" type="text/javascript">
+		$(window).scroll(function() {
+			$(".clear-nav").css('background-color', '#131313');
+			$(".navbar-default .navbar-nav > li > a").css('color', '#7D7B77');
+
+			if ($(window).scrollTop() === 0) {
+				$('.clear-nav').css('background-color', 'transparent');
+				$(".navbar-default .navbar-nav > li > a").css('color', '#AEAEAE');
+			}
+		});
+
+		$(document).ready(function() {
+			$('#MainHeader').hide().fadeIn({
+				queue: false,
+				duration: 3000
+			});
+			$('#MainHeader').animate({
+				"top": "50px"
+			}, 3000);
+		});
+	</script>
+	<script>
+		/**
+		 * Parallax Scrolling Tutorial
+		 * For NetTuts+
+		 *
+		 * Author: Mohiuddin Parekh
+		 *	http://www.mohi.me
+		 * 	@mohiuddinparekh
+		 */
+
+
+		$(document).ready(function() {
+			// Cache the Window object
+			$window = $(window);
+
+			$('header[data-type="background"]').each(function() {
+				var $bgobj = $(this); // assigning the object
+
+				$(window).scroll(function() {
+
+					// Scroll the background at var speed
+					// the yPos is a negative value because we're scrolling it UP!
+					var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+					// Put together our final background position
+					var coords = '50% ' + yPos + 'px';
+
+					// Move the background
+					$bgobj.css({
+						backgroundPosition: coords
+					});
+
+				}); // window scroll Ends
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<header class="header" id="home" data-speed="2" data-type="background">
+		<nav class="navbar-default clear-nav navbar-static-top NavFix">
+			<div class="container">
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="active scroll" href="#home">HOME</a></li>
+						<li><a class="scroll" href="#about">ABOUT ME</a></li>
+						<li><a class="scroll" href="#work">MY WORK</a></li>
+						<li><a class="scroll" href="#contact">CONTACT ME</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End of Nav Bar -->
+
+		<!-- Header -->
+
+		<div class="CenterHeader" id="MainHeader">
+			<img class="LogoIMG" src="images/Logo.png" alt="Logo" width="10%" height="10%">
+			<p class="Text-Bold-White"><strong>Alex King</strong></p>
+			<p class="White">"The Key To Creativity Is Freedom"</p>
+		</div>
+	</header>
+	<!-- End of Header -->
+
+	<div class="MainArea">
+		<!-- About Me -->
+		<section id="about" class="section-Area">
+			<div class="CenterIt">
+				<p class="Text-Bold-Black"><strong>About Me</strong></p>
+			</div>
+			<div class="CenterIt">
+				<p class="Black">Hey I am Freedom Designs, 18 year old who lives in the south area of the UK. I'm happy that you have stumbled across my small webpage.</p>
+				<br>
+				<p class="Black">I'm a graphic designer from the UK. I have been designing for around 4 years now for many different clients doing YouTube banners, Social media re-brands, Logo's, Twitch livesteam overlays and as of lately Web development. with interest's such as
+					video editing and programming (C#, PHP and SQL) being skills that I have been learning.</p>
+			</div>
+		</section>
+		<!-- End of About Me -->
+
+	</div>
+
+	<div class="MainArea">
+		<!-- About Me -->
+		<section id="work" class="section-Area">
+			<div class="CenterIt">
+				<p class="Text-Bold-Black"><strong>My Work</strong></p>
+			</div>
+			<div class="CenterIt">
+				<p class="Black">Hey I am Freedom Designs, 18 y/o who lives in the south area of the UK. I'm happy that you have stumbled across my small webpage.</p>
+				<br>
+				<p class="Black">I'm a graphic designer from the UK. I have been designing for around 4 years now for many different clients doing YouTube banners, Social media re-brands, Logo's, Twitch livesteam overlays and as of lately Web development. with interest's such as
+					video editing and programming (C#, PHP and SQL) being skills that I have been learning.</p>
+			</div>
+		</section>
+		<!-- End of About Me -->
+
+		<div class="MainArea">
+			<!-- About Me -->
+			<section id="contact" class="section-Area">
+				<div class="CenterIt">
+					<p class="Text-Bold-Black"><strong>Contact Me</strong></p>
+				</div>
+				<div class="CenterIt">
+					<p class="Black">Hey I am Freedom Designs, 18 y/o who lives in the south area of the UK. I'm happy that you have stumbled across my small webpage.</p>
+					<br>
+					<p class="Black">I'm a graphic designer from the UK. I have been designing for around 4 years now for many different clients doing YouTube banners, Social media re-brands, Logo's, Twitch livesteam overlays and as of lately Web development. with interest's such as
+						video editing and programming (C#, PHP and SQL) being skills that I have been learning.</p>
+				</div>
+			</section>
+			<!-- End of About Me -->
+
+	</div>
+	<!-- Footer -->
+	<footer class="footer container">
+		<div class="footer-left">
+			<li>
+				<p>© Alex King 2015</p>
+			</li>
+		</div>
+		<div class="footer-right">
+			<li><a class="" href="https://twitter.com/FreedomDesignz" target="_blank">Twitter</a></li>
+			<li><a class="" href="https://github.com/FreedomDesigns" target="_blank">Github</a></li>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
